@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+	<link rel="stylesheet" type="text/css" href="login_phone.css">
+</head>
+<body>
+<div id="firstdiv">
+	<label><h1>enter phone no</h1></label>
+	<input type="text" name="" id="no">
+	<button type="button" id="button" onclick="signin()">click</button>
+</div>
+
+<div id="seconddiv">
+	<label><h2>enter confirmation code11</h2></label>
+	<input type="text" name="" id="no2">
+	<button type="button" id="button2" onclick="signinsec()">click</button>
+</div>
+
+<div id="result">
+	<h3>HEY YOU SIGNED IN AGAIN</h3>
+	<p>so how does it feel</p>
+</div>
+<div id="recaptcha-container"></div>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCveamR4uj4aL23xTZdsx5omocDCMfFa2k",
+    authDomain: "fir-login-b26ec.firebaseapp.com",
+    databaseURL: "https://fir-login-b26ec.firebaseio.com",
+    projectId: "fir-login-b26ec",
+    storageBucket: "fir-login-b26ec.appspot.com",
+    messagingSenderId: "593791850047"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script type="text/javascript" src="login_phone.js"></script>
+</body>
+</html>
