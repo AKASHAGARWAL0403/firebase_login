@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+	<link rel="stylesheet" type="text/css" href="login_page.css">
+</head>
+<body>
+
+<div id="firstdiv">
+	<div id="heading">
+		<h1>Enter your student id and password</h1></div>
+	<div id="insidediv">
+   
+   <div>
+
+	<div class="inputone" > <input type="text" name="student_id" maxlength="30" required placeholder="YOUR STUDENT_ID" class="inpu" id="emailf"></div><br>
+	<div class="inputone">  <input type="password" name="password" maxlength="30" required placeholder="YOUR PASSWORD" class="inpu" id="passwordf"></div><br/>
+	<button type="button"  id="submit" onclick="login()">login to your account</button>
+   </div>
+
+
+<hr>
+
+</div>
+</div>
+
+<div id="footer">
+   <h3 id="headingf">WELCOME USER</h3>
+   <p id="paraf"> Hope you had a great experience using firebase</p>
+  <button id="logoutf" onclick="logout()">logout</button>
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCveamR4uj4aL23xTZdsx5omocDCMfFa2k",
+    authDomain: "fir-login-b26ec.firebaseapp.com",
+    databaseURL: "https://fir-login-b26ec.firebaseio.com",
+    projectId: "fir-login-b26ec",
+    storageBucket: "fir-login-b26ec.appspot.com",
+    messagingSenderId: "593791850047"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script type="text/javascript" src="login_page.js"></script>
+</body>
+</html>
