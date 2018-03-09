@@ -1,5 +1,5 @@
 
-firebase.auth().onAuthStateChanged(function(user) {
+/*firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
      document.getElementById("firstdiv").style.display = "block";
      document.getElementById("seconddiv").style.display = "none";
@@ -10,7 +10,7 @@ firebase.auth().onAuthStateChanged(function(user) {
      document.getElementById("seconddiv").style.display = "none";
      document.getElementById("result").style.display = "block";
   }
-});
+});*/
 
 
 // To apply the default browser preference instead of explicitly setting it.
